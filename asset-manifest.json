@@ -1,13 +1,13 @@
 {
-  "main.css": "/Book-Finder-App/static/css/main.888e3209.chunk.css",
-  "main.js": "/Book-Finder-App/static/js/main.2dd2f782.chunk.js",
-  "main.js.map": "/Book-Finder-App/static/js/main.2dd2f782.chunk.js.map",
+  "main.css": "/Book-Finder-App/static/css/main.88ed6125.chunk.css",
+  "main.js": "/Book-Finder-App/static/js/main.5895bb8a.chunk.js",
+  "main.js.map": "/Book-Finder-App/static/js/main.5895bb8a.chunk.js.map",
   "runtime~main.js": "/Book-Finder-App/static/js/runtime~main.fee052b7.js",
   "runtime~main.js.map": "/Book-Finder-App/static/js/runtime~main.fee052b7.js.map",
   "static/js/2.c88c70e5.chunk.js": "/Book-Finder-App/static/js/2.c88c70e5.chunk.js",
   "static/js/2.c88c70e5.chunk.js.map": "/Book-Finder-App/static/js/2.c88c70e5.chunk.js.map",
   "index.html": "/Book-Finder-App/index.html",
-  "precache-manifest.fd2a25591ce25b845b830530999a81b2.js": "/Book-Finder-App/precache-manifest.fd2a25591ce25b845b830530999a81b2.js",
+  "precache-manifest.7327e35e8798de88b808078e524d45a1.js": "/Book-Finder-App/precache-manifest.7327e35e8798de88b808078e524d45a1.js",
   "service-worker.js": "/Book-Finder-App/service-worker.js",
-  "static/css/main.888e3209.chunk.css.map": "/Book-Finder-App/static/css/main.888e3209.chunk.css.map"
+  "static/css/main.88ed6125.chunk.css.map": "/Book-Finder-App/static/css/main.88ed6125.chunk.css.map"
 }
