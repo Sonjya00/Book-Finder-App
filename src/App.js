@@ -45,31 +45,29 @@ class App extends Component {
       query: event.target.value
     });
   };
-  // handle book data of any type
-  handleData = data => {
-    return data ? (Array.isArray(data) ? this.handleArrays(data) : data) : null;
-  };
-  // handle book data of the array type
-  handleArrays(data) {
-    return !data ? "" : data.length > 0 ? data.join(", ") : "";
-  }
   render() {
     const { books, errorMsg } = this.state;
     return (
       <div className="App">
-        <h1 className="heading--primary">Book Finder</h1>
-        <input
-          className="search-bar"
-          type="text"
-          placeholder="Search by book, title, or author"
-          onChange={this.handleChange}
-          onKeyDown={this.handleKeyDown}
-        />
-        <button className="btn search-btn" onClick={this.checkInput}>
-          Search
-        </button>
-        {this.state.isLoading && <p className="loading-msg">Loading...</p>}
-        {this.state.errorMsg && <p className="error-msg">{errorMsg}</p>}
+        {/* Upper area */}
+        <h1 className="heading--primary">
+          Book Finder <i class="fas fa-book" />
+        </h1>
+        <div className="action__container">
+          <input
+            className="search-bar"
+            type="text"
+            placeholder="Search by book, title, or author..."
+            onChange={this.handleChange}
+            onKeyDown={this.handleKeyDown}
+          />
+          <button className="btn search-btn" onClick={this.checkInput}>
+            Search
+          </button>
+          {this.state.isLoading && <p className="loading-msg">Loading...</p>}
+          {this.state.errorMsg && <p className="error-msg">{errorMsg}</p>}
+        </div>
+        {/* Search result area */}
         {books.length === 0 ? (
           <p className="initial-msg">
             <i class="far fa-frown" /> Nothing Here Yet - Try Searching For a
@@ -91,7 +89,7 @@ class App extends Component {
                       ? volumeInfo.imageLinks.smallThumbnail
                       : ""
                   }
-                  selfLink={volumeInfo.previewLink}
+                  previewLink={volumeInfo.previewLink}
                 />
               );
             })}

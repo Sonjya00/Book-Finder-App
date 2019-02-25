@@ -2,7 +2,8 @@ html,
 body {
   height: 100%;
   width: 100%;
-  background: linear-gradient(to right, rgb(184, 244, 255), rgb(216, 255, 207));
+  /* background: linear-gradient(to left, rgb(224, 224, 224), rgb(236, 255, 232)); */
+  background: linear-gradient(to left, rgb(219, 185, 250), rgb(164, 211, 255));
   font-family: "Raleway", sans-serif;
 }
 
@@ -13,17 +14,13 @@ body {
 .heading--primary {
   font-size: 36px;
   letter-spacing: 2px;
+  margin-top: 40px;
   text-transform: uppercase;
+  text-shadow: 1px 1px 5px rgba(170, 169, 169, 0.5);
 }
 
 .heading--secondary {
   letter-spacing: 1px;
-}
-
-.heading--primary {
-  text-shadow: 1px 1px 5px rgba(170, 169, 169, 0.5);
-}
-.heading--secondary {
   text-shadow: 1px 1px 5px rgba(189, 188, 188, 0.5);
 }
 
@@ -35,12 +32,17 @@ body {
   color: rgb(75, 75, 75);
 }
 
+.action__container {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
 .search-bar {
   border: none;
   border-radius: 5px;
   font-family: "Raleway", sans-serif;
   font-size: 16px;
-  margin: 10px;
+  margin: 10px 5px 10px 0;
   padding: 5px;
   padding-left: 10px;
   width: 240px;
@@ -48,7 +50,8 @@ body {
 }
 
 .btn {
-  background-color: rgb(36, 192, 36);
+  /* background-color: rgb(36, 192, 36); */
+  background-color: rgb(83, 86, 255);
   border-radius: 5px;
   color: #fff;
   cursor: pointer;
@@ -57,15 +60,17 @@ body {
 }
 
 .btn:hover {
-  background-color: rgb(1, 139, 1);
+  /* background-color: rgb(1, 139, 1); */
+  background-color: rgb(50, 9, 197);
 }
 
 .btn:active {
-  background-color: rgb(126, 250, 126);
+  background-color: rgb(100, 115, 248);
+  /* background-color: rgb(126, 250, 126); */
 }
 
 .search-btn {
-  margin: 10px;
+  margin: 10px 0;
   width: 80px;
 }
 
@@ -79,7 +84,7 @@ body {
 }
 
 .error-msg {
-  color: red;
+  color: rgb(167, 3, 85);
 }
 
 /* Books */
@@ -137,6 +142,7 @@ body {
   flex-flow: column wrap;
   text-align: left;
   padding: 0 15px;
+  word-break: break-word;
 }
 
 .book-thumbnail {
